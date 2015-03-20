@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "All Notes"
+title: "All Entries"
 ---
 
-Notes by Month
-==============
+Entries by Month
+================
 
 
 {% for post in site.posts  %}
@@ -19,7 +19,7 @@ Notes by Month
 <ul>
 {% endif %}
 
-<li><a href="{{ post.url }}">{{ post.date | date: "%-d (%a)"}}</a></li>
+<li><a href="{{ post.url }}">{{ post.title }} {{ post.date | date: "(%A, %-d)"}}</a></li>
 
 {% if forloop.last %}
 </ul>
