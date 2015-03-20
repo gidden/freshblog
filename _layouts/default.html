@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>
+    {% if page.title %}
+      {{ page.title }} &ndash;
+    {% endif %}
+    {{ site.name }}
+  </title>
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="description" content="{{ site.description }}" />
+
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/atom.xml" />
+
+  <link rel="stylesheet" href="{{ site.url }}/css/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="{{ site.url }}/css/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="{{ site.url }}/css/syntax.css" type="text/css" media="screen, projection" />
+  <link media="only screen and (max-device-width: 480px)" href="{{ site.url }}/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="{{ site.url }}/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="{{ site.url }}/favicon.ico">
+</head>
+
+<body>
+  <section class="sidebar">
+    <a href="{{ site.github.owner_url }}/">
+      <img src="{{ site.gravatar_url }}?s=150" height="75" width="75" class="avatar" />
+    </a>
+
+    <section class="sections">
+      <ul>
+        <li><a href="{{ site.url }}/all.html">All Entries</a></li>
+      </ul>
+    </section>
+
+    <form action="{{ '/search' | prepend: site.baseurl }}" method="GET">
+      <label for="query">Search:</label>
+      <input type="text" name="query" placeholder="">
+    </form>
+
+  </section>
+
+  <script type="text/javascript"
+          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>  
+  
+  <section class="content">
+    {{ content }}
+  </section>
+
+</body>
+</html>

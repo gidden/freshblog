@@ -1,0 +1,9 @@
+markdown: redcarpet
+highlighter: pygments
+permalink: /posts/:title
+rdiscount:
+  extensions: [smart]
+
+name: My New Blog
+description: An absolute minimist blog
+gravatar_url: http://www.madbuda.com/wp-content/uploads/2012/10/tux-link.png
