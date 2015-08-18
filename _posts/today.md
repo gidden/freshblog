@@ -1,1 +1,0 @@
-/Users/gidden/work/life/_posts/2015-08-17-2015-08-17.md
