@@ -16,9 +16,23 @@ gem install jekyll
 Get Started
 ===========
 
-Update the Gravatar URL in `_config.yml` to your preferred picture and serve it up with
+Update the Gravatar URL in `_config.yml` to your preferred picture.
+
+Make a new post for today
 
 ```
-jekyll serve -w
+make new
+```
+
+Edit it
+
+```
+emacs _posts/today.md
+```
+
+Serve it up with
+
+```
+make serve
 ```
 
